@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* style element for the mobile version of the application, for now this style might be only for the header page*/
+@media (max-width:600px){
+    header{
+        /* background-color: whitesmoke; */
+        height: fit-content;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:15px 5px;
+    }
+    #btn{
+        width: fit-content;
+    }
+    #line1, #line2, #line3{
+            width: 35px;
+            height: 5px;
+            border-width: 1px;
+            background-color:rgba(0, 123, 255, 0.8);
+            margin: 4px;
+            border-radius: 2px;
+    }
+    .logo{
+        font-size:30px;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+        color:rgba(0, 123, 255, 0.7) ;
+        text-shadow: 2px 2px 1px rgb(163, 157, 157);
+
+    }
+    #loading_bar{
+        width:fit-content;
+        display:inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   #logo #bar1{
+        width:5px;
+        height:18px;
+        border-radius: 2px;
+        background-color:whitesmoke;
+        position: absolute;
+        right: 32px;
+        top:33px;
+        box-shadow: 3px 0px 1px rgb(110, 107, 107)
+    }
+    #logo #bar2{
+        width:5px;
+        height:26px;
+        border-radius: 2px;
+        background-color: whitesmoke;
+        position: absolute;
+        right: 23px;
+        top:26px;
+        box-shadow: 3px 0px 1px rgb(110, 107, 107)
+    }
+    #logo #bar3{
+        width:5px;
+        height:30px;
+        border-radius: 2px;
+        background-color: whitesmoke;
+        position: absolute;
+        right: 14px;
+        top:20px;
+        box-shadow: 2px 0px 1px rgb(110, 107, 107);
+    }
+    #logo .circle{
+        width: 35px;
+        height: 35px;
+        background: rgba(0, 123, 255, 0.8);
+        border-color: #000000;
+        border-radius: 50%;
+        margin-right: 2px;
+    }
+    /* the list section for menu */
+    #list{
+    display: block;
+    line-height: 100px;
+    position: absolute;
+    top:60px;
+    text-align: center;
+    width:100%;
+    background-color:#f8f9fa;
+        }
+    #list ul{
+        list-style: none;
+    }
+    #list ul li a{
+        text-decoration: none;
+        color:#000000;
+        font-size: 25px;
+         box-shadow: 3px 3px 1px #007bff, -3px -3px 1px #007bff;
+         padding : 1% 69px;
+         border-radius: 10px;
+
+    }
+    #list ul li{
+        /* box-shadow: 1px 1px 1px #007bff, -1px -1px 1px #007bff */
+    }
+
+/* on-load option for the  */
+ 
+}
