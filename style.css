@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 /* style element for the mobile version of the application, for now this style might be only for the header page*/
-@media (max-width:600px){
+@media (max-width:1060px){
     header{
         /* background-color: whitesmoke; */
         height: fit-content;
