@@ -98,9 +98,23 @@
          border-radius: 10px;
 
     }
-    #bar1.active{
+    #line1.active{
         background-color: red;
-}
+        transform: rotate(-40deg) translate(-2px, 6px);
+        transition: transform 0.5s;
+    }
+
+    #line3.open{
+        background-color: red;
+        transform: rotate(40deg) translate(-2px,-3px);
+        transition: transform 0.5s;
+    }
+
+    #line2.close{
+        display: none;
+        transition:none
+    }
+
     /* #list ul li{ 
          box-shadow: 1px 1px 1px #007bff, -1px -1px 1px #007bff 
     }*/
