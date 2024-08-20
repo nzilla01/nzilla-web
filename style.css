@@ -54,13 +54,7 @@
     }
     /* the list section for menu */
     #list{
-    display: block;
-    line-height: 100px;
-    position: absolute;
-    top:60px;
-    text-align: center;
-    width:100%;
-    background-color:#f8f9fa;
+        display: none;
         }
     #list ul{
         list-style: none;
@@ -92,7 +86,17 @@
 
     #line2.close{
         display: none;
-        transition:none
+        transition:opacity 0.5s;
+    }
+    #list.show{
+        display: block;
+        line-height: 100px;
+        position: absolute;
+        top:60px;
+        text-align: center;
+        width:100%;
+        background-color:#f8f9fa;
+        transition: 0.10s;
     }
 
     /* #list ul li{ 
