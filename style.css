@@ -11,14 +11,17 @@
         display:flex;
         align-items: center;
         justify-content: space-between;
-        margin:15px 5px;
+        margin:15px 5px; 
+        padding: 10px 5px;
     }
     #btn{
         width: fit-content;
+        position: absolute;
+        right:5px
     }
     #line1, #line2, #line3{
             width: 35px;
-            height: 5px;
+            height: 4px;
             border-width: 1px;
             background-color:rgba(0, 123, 255, 0.8);
             margin: 4px;
@@ -26,6 +29,7 @@
             transition:0.5s ease-out;
     }
     .logo{
+        position: absolute;
         font-size:30px;
         font-weight: 800;
         font-family: 'Raleway', sans-serif;
@@ -39,39 +43,10 @@
         justify-content: space-between;
         align-items: center;
     }
-   #logo #bar1{
-        width:5px;
-        height:18px;
-        border-radius: 2px;
-        background-color:whitesmoke;
-        position: absolute;
-        right: 32px;
-        top:33px;
-        box-shadow: 3px 0px 1px rgb(110, 107, 107)
-    }
-    #logo #bar2{
-        width:5px;
-        height:26px;
-        border-radius: 2px;
-        background-color: whitesmoke;
-        position: absolute;
-        right: 23px;
-        top:26px;
-        box-shadow: 3px 0px 1px rgb(110, 107, 107)
-    }
-    #logo #bar3{
-        width:5px;
-        height:30px;
-        border-radius: 2px;
-        background-color: whitesmoke;
-        position: absolute;
-        right: 14px;
-        top:20px;
-        box-shadow: 2px 0px 1px rgb(110, 107, 107);
-    }
+   
     #logo .circle{
-        width: 35px;
-        height: 35px;
+        width: 0px;
+        height: 45px;
         background: rgba(0, 123, 255, 0.8);
         border-color: #000000;
         border-radius: 50%;
@@ -103,12 +78,16 @@
         background-color: red;
         transform: rotate(-45deg) translate(-2.5px, 4px);
         transition: transform 0.5s;
+        height:3px;
+        width:30px;
     }
 
     #line3.open{
         background-color: red;
-        transform: rotate(45deg) translate(-2px, -3px);
+        transform: rotate(45deg) translate(-1px, -3px);
         transition: transform 0.5s;
+        height:3px;
+        width:30px;
     }
 
     #line2.close{
