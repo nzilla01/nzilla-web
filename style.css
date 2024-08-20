@@ -3,6 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header{
+    height:fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin:15px 5px; 
+    padding: 10px 5px;
+    text-align: center;
+}
+#list ul{
+    display: flex;
+    padding: 3px 30px;
+    list-style: none;
+}
+#list ul li{
+    margin:5px 20px;
+    padding: 0px 30px
+}
+#list ul li a{
+    text-decoration: none;
+}
 /* style element for the mobile version of the application, for now this style might be only for the header page*/
 @media (max-width:1020px){
     header{
